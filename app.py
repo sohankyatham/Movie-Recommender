@@ -9,3 +9,13 @@ num_recs = st.slider("Number of recommendations", 1, 1000)
 
 st.write("Dataset Preview")
 st.dataframe(movies.head())
+
+
+movies = load_data()
+
+st.write(f"🎬 Total movies in dataset: {len(movies)}")
+
+num_recs = st.slider("Number of recommendations", 1, 1000)
+
+st.write("Dataset Preview")
+st.dataframe(movies.head())
