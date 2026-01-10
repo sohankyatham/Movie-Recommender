@@ -2,20 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.title("Movie Recommender")
+st.write("Here is the IMDB Top 1000 movies dataset:")
 
-movies = pd.read_csv("imdb_top_1000.csv")
-
-num_recs = st.slider("Number of recommendations", 1, 1000)
-
-st.write("Dataset Preview")
-st.dataframe(movies.head())
-
-
-movies = load_data()
-
-st.write(f"🎬 Total movies in dataset: {len(movies)}")
-
-num_recs = st.slider("Number of recommendations", 1, 1000)
-
-st.write("Dataset Preview")
-st.dataframe(movies.head())
+movies = pd.read_csv('imdb_top_1000.csv')
+st.write(movies)

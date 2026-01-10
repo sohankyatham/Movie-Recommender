@@ -1,4 +1,4 @@
-# IMDB Movie Recommender
+# Work in Progress - IMDB Movie Recommender
 
 ## Description
 A content-based movie recommendation system built using Python. The app suggests similar movies based on plot descriptions from the IMDB Top 1000 dataset.
